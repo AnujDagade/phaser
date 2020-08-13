@@ -9,7 +9,8 @@ constructor(){
 	//ship
 	this.ship = this.add.image(50,20,"ship");  
 	//this.ship.setOrigin(100,100);
-	this.ship.setScale(2);
+	  //this.ship.setScale(2);
+	
 	this.ship2 = this.add.image(100,20,"ship2"); 
   }
   	update(){
