@@ -4,7 +4,7 @@ constructor(){
 }
   create() {
 	//this.add.text(20,20,"Game is running",{font:"25px Arial",fill:"blue"});
-	this.background = this.add.image(0,0,"background");
+	this.background = this.add.tileSprite(0,0,config.width,config.height,"background");
 	this.background.setOrigin(0,0);
 	//ship
 	this.ship = this.add.image(50,20,"ship");  
@@ -18,7 +18,9 @@ constructor(){
 		this.ship.y += 1;
 		this.ship2.y += 1;
 		this.endreach(this.ship);
-		this.endreach(this.ship2);
+		this.endreach(this.ship2); 
+		this.background.tilePositionY -= 0.5;
+		
   
 }
 endreach(vehicles) {
